@@ -15,7 +15,7 @@ export const getNews = async (request, response) => {
 
     const today = new Date();
     const yesterday = new Date(today);
-    yesterday.setDate(today.getDate() - 1);
+    yesterday.setDate(today.getDate() - 2);
     yesterday.setHours(0, 0, 0, 0);
     console.log(yesterday);
 
